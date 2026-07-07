@@ -37,6 +37,19 @@ After copying the file, restart shapez.io and enable the mod if needed.
 - It intentionally does not create a building and does not alter factory throughput.
 - The mod version is kept at `1.0.1` to avoid triggering shapez.io save warnings for existing test saves.
 
+## Offline save assistant
+
+This repository also contains a non-invasive local CLI:
+
+```bash
+node tools/shapez-save-assistant.js inspect verify-backup/savegame-cfcb7cc273e9cf467c9d415372f040d00b17c447.bin
+node tools/shapez-save-assistant.js note add --level 12 --title "Main idea" --text "Describe the factory approach here."
+node tools/shapez-save-assistant.js note list
+node tools/shapez-save-assistant.js propose-delivery verify-backup/savegame-cfcb7cc273e9cf467c9d415372f040d00b17c447.bin --level 12
+```
+
+The CLI only reads paths you pass explicitly. It does not discover or touch the live shapez.io save directory, and its writes are limited to this repository's `notes/` and `reports/` directories. See `docs/SAFE_TOOLING_PLAN.md`.
+
 ## License
 
 MIT

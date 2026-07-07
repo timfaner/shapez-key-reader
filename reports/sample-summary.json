@@ -1,0 +1,798 @@
+{
+  "source": "/Users/timfan/Work/shapez reader/verify-backup/savegame-cfcb7cc273e9cf467c9d415372f040d00b17c447.bin",
+  "sourceBytes": 1250540,
+  "decodedBytes": 7333262,
+  "parseMode": "json",
+  "parseWarning": null,
+  "parseError": null,
+  "topLevelKeys": [
+    "D",
+    "E",
+    "dump",
+    "version",
+    "ÿ"
+  ],
+  "likelyLevel": 25,
+  "metadata": {
+    "version": 1010
+  },
+  "progressFields": [
+    {
+      "path": "dump.camera.zoomLevel",
+      "type": "number",
+      "value": 1.1441
+    },
+    {
+      "path": "dump.hubGoals",
+      "type": "object",
+      "value": {
+        "kind": "object",
+        "keys": 3,
+        "sample": {
+          "level": 25,
+          "storedShapes": {
+            "kind": "object",
+            "keys": 49,
+            "sample": {
+              "CuCuCuCu": 536047,
+              "----CuCu": 687,
+              "RuRuRuRu": 1226740,
+              "----RuRu": 252,
+              "RuRu----": 20613,
+              "Cu----Cu": 272,
+              "------Cu": 58,
+              "Cu----Cu:Cw----Cw:Sy------:Cy----Cy": 108941,
+              "CcSyCcSy:SyCcSyCc:CcSyCcSy": 116884,
+              "CcRcCcRc:RwCwRwCw:Sr--Sw--:CyCyCyCy": 6409,
+              "CbCuCbCu:Sr------:--CrSrCr:CwCwCwCw": 6593,
+              "upgradeLevels": 28985
+            }
+          },
+          "beltPaths": {
+            "kind": "object",
+            "keys": 4,
+            "sample": {
+              "entityPath": 8,
+              "items": 7,
+              "spacingToFirstItem": 7,
+              "pinnedShapes": 7
+            }
+          }
+        }
+      }
+    },
+    {
+      "path": "dump.hubGoals.level",
+      "type": "number",
+      "value": 25
+    },
+    {
+      "path": "dump.hubGoals.storedShapes",
+      "type": "object",
+      "value": {
+        "kind": "object",
+        "keys": 49,
+        "sample": {
+          "CuCuCuCu": 536047,
+          "----CuCu": 687,
+          "RuRuRuRu": 1226740,
+          "----RuRu": 252,
+          "RuRu----": 20613,
+          "Cu----Cu": 272,
+          "------Cu": 58,
+          "Cu----Cu:Cw----Cw:Sy------:Cy----Cy": 108941,
+          "CcSyCcSy:SyCcSyCc:CcSyCcSy": 116884,
+          "CcRcCcRc:RwCwRwCw:Sr--Sw--:CyCyCyCy": 6409,
+          "CbCuCbCu:Sr------:--CrSrCr:CwCwCwCw": 6593,
+          "upgradeLevels": 28985
+        }
+      }
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.CuCuCuCu",
+      "type": "number",
+      "value": 536047
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.----CuCu",
+      "type": "number",
+      "value": 687
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.RuRuRuRu",
+      "type": "number",
+      "value": 1226740
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.----RuRu",
+      "type": "number",
+      "value": 252
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.RuRu----",
+      "type": "number",
+      "value": 20613
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.Cu----Cu",
+      "type": "number",
+      "value": 272
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.------Cu",
+      "type": "number",
+      "value": 58
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.Cu----Cu:Cw----Cw:Sy------:Cy----Cy",
+      "type": "number",
+      "value": 108941
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.CcSyCcSy:SyCcSyCc:CcSyCcSy",
+      "type": "number",
+      "value": 116884
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.CcRcCcRc:RwCwRwCw:Sr--Sw--:CyCyCyCy",
+      "type": "number",
+      "value": 6409
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.CbCuCbCu:Sr------:--CrSrCr:CwCwCwCw",
+      "type": "number",
+      "value": 6593
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.upgradeLevels",
+      "type": "number",
+      "value": 28985
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.belt",
+      "type": "number",
+      "value": 659636
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.miner",
+      "type": "number",
+      "value": 532790
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.processors",
+      "type": "number",
+      "value": 449805
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.painting",
+      "type": "number",
+      "value": 772658
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.entities",
+      "type": "number",
+      "value": 442963
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.uid",
+      "type": "number",
+      "value": 963148
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.components",
+      "type": "number",
+      "value": 335952
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.StaticMapEntity",
+      "type": "number",
+      "value": 121393
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.origin",
+      "type": "number",
+      "value": 289376
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.rotation",
+      "type": "number",
+      "value": 11337
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.originalRotation",
+      "type": "number",
+      "value": 154738
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.code",
+      "type": "number",
+      "value": 4
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.ItemProcessor",
+      "type": "number",
+      "value": 301323
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.nextOutputSlot",
+      "type": "number",
+      "value": 314841
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.WiredPins",
+      "type": "number",
+      "value": 509711
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.slots",
+      "type": "number",
+      "value": 116029
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.value",
+      "type": "number",
+      "value": 2694
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.Miner",
+      "type": "number",
+      "value": 122000
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.lastMiningTime",
+      "type": "number",
+      "value": 267663
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.itemChainBuffer",
+      "type": "number",
+      "value": 198682
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.ItemEjector",
+      "type": "number",
+      "value": 5674
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.item",
+      "type": "number",
+      "value": 7
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.progress",
+      "type": "number",
+      "value": 6501
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.UndergroundBelt",
+      "type": "number",
+      "value": 903
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.pendingItems",
+      "type": "number",
+      "value": 7343
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.BeltReader",
+      "type": "number",
+      "value": 119113
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.lastItem",
+      "type": "number",
+      "value": 1
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.Storage",
+      "type": "number",
+      "value": 4
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.storedCount",
+      "type": "number",
+      "value": 22
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.storedItem",
+      "type": "number",
+      "value": 2
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.Lever",
+      "type": "number",
+      "value": 2
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.toggled",
+      "type": "number",
+      "value": 369608
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.Filter",
+      "type": "number",
+      "value": 77
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.pendingItemsToLeaveThrough",
+      "type": "number",
+      "value": 38
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.pendingItemsToReject",
+      "type": "number",
+      "value": 217455
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.ConstantSignal",
+      "type": "number",
+      "value": 26006
+    },
+    {
+      "path": "dump.hubGoals.storedShapes.signal",
+      "type": "number",
+      "value": 17961
+    },
+    {
+      "path": "dump.hubGoals.beltPaths",
+      "type": "object",
+      "value": {
+        "kind": "object",
+        "keys": 4,
+        "sample": {
+          "entityPath": 8,
+          "items": 7,
+          "spacingToFirstItem": 7,
+          "pinnedShapes": 7
+        }
+      }
+    },
+    {
+      "path": "dump.hubGoals.beltPaths.entityPath",
+      "type": "number",
+      "value": 8
+    },
+    {
+      "path": "dump.hubGoals.beltPaths.items",
+      "type": "number",
+      "value": 7
+    },
+    {
+      "path": "dump.hubGoals.beltPaths.spacingToFirstItem",
+      "type": "number",
+      "value": 7
+    },
+    {
+      "path": "dump.hubGoals.beltPaths.pinnedShapes",
+      "type": "number",
+      "value": 7
+    },
+    {
+      "path": "dump.shapes",
+      "type": "array",
+      "value": {
+        "kind": "array",
+        "length": 55855,
+        "sample": [
+          {
+            "kind": "object",
+            "keys": 2,
+            "sample": {
+              "waypoints": 10000,
+              "label": {
+                "kind": "object",
+                "keys": 3,
+                "sample": {
+                  "layer": {
+                    "kind": "object",
+                    "keys": 4,
+                    "sample": {
+                      "modExtraData": {
+                        "kind": "object",
+                        "keys": 2,
+                        "sample": {
+                          "x": -2,
+                          "y": -2
+                        }
+                      },
+                      "stats": 0,
+                      "failedMam": 0,
+                      "trashedCount": 26
+                    }
+                  },
+                  "usedInverseRotater": {
+                    "kind": "object",
+                    "keys": 1,
+                    "sample": {
+                      "lastUpdate": 0
+                    }
+                  },
+                  "mods": {
+                    "kind": "object",
+                    "keys": 1,
+                    "sample": {
+                      "id": {
+                        "kind": "array",
+                        "length": 1,
+                        "sample": [
+                          {
+                            "kind": "object",
+                            "keys": 1,
+                            "sample": {
+                              "website": {
+                                "kind": "object",
+                                "keys": 2,
+                                "sample": {
+                                  "$": "&",
+                                  "data": "'"
+                                }
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "kind": "object",
+            "keys": 2,
+            "sample": {
+              "waypoints": 11250,
+              "label": {
+                "kind": "object",
+                "keys": 1,
+                "sample": {
+                  "layer": {
+                    "kind": "object",
+                    "keys": 4,
+                    "sample": {
+                      "modExtraData": {
+                        "kind": "object",
+                        "keys": 2,
+                        "sample": {
+                          "x": -4,
+                          "y": -5
+                        }
+                      },
+                      "stats": 180,
+                      "failedMam": 180,
+                      "trashedCount": 1
+                    }
+                  }
+                }
+              }
+            }
+          },
+          {
+            "kind": "object",
+            "keys": 2,
+            "sample": {
+              "waypoints": 11252,
+              "label": {
+                "kind": "object",
+                "keys": 1,
+                "sample": {
+                  "layer": {
+                    "kind": "object",
+                    "keys": 4,
+                    "sample": {
+                      "modExtraData": {
+                        "kind": "object",
+                        "keys": 2,
+                        "sample": {
+                          "x": -4,
+                          "y": -4
+                        }
+                      },
+                      "stats": 180,
+                      "failedMam": 180,
+                      "trashedCount": 1
+                    }
+                  }
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "path": "dump.shapes[0].waypoints",
+      "type": "number",
+      "value": 10000
+    },
+    {
+      "path": "dump.shapes[0].label",
+      "type": "object",
+      "value": {
+        "kind": "object",
+        "keys": 3,
+        "sample": {
+          "layer": {
+            "kind": "object",
+            "keys": 4,
+            "sample": {
+              "modExtraData": {
+                "kind": "object",
+                "keys": 2,
+                "sample": {
+                  "x": -2,
+                  "y": -2
+                }
+              },
+              "stats": 0,
+              "failedMam": 0,
+              "trashedCount": 26
+            }
+          },
+          "usedInverseRotater": {
+            "kind": "object",
+            "keys": 1,
+            "sample": {
+              "lastUpdate": 0
+            }
+          },
+          "mods": {
+            "kind": "object",
+            "keys": 1,
+            "sample": {
+              "id": {
+                "kind": "array",
+                "length": 1,
+                "sample": [
+                  {
+                    "kind": "object",
+                    "keys": 1,
+                    "sample": {
+                      "website": {
+                        "kind": "object",
+                        "keys": 2,
+                        "sample": {
+                          "$": "&",
+                          "data": "'"
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "path": "dump.shapes[0].label.layer",
+      "type": "object",
+      "value": {
+        "kind": "object",
+        "keys": 4,
+        "sample": {
+          "modExtraData": {
+            "kind": "object",
+            "keys": 2,
+            "sample": {
+              "x": -2,
+              "y": -2
+            }
+          },
+          "stats": 0,
+          "failedMam": 0,
+          "trashedCount": 26
+        }
+      }
+    },
+    {
+      "path": "dump.shapes[0].label.layer.modExtraData",
+      "type": "object",
+      "value": {
+        "kind": "object",
+        "keys": 2,
+        "sample": {
+          "x": -2,
+          "y": -2
+        }
+      }
+    },
+    {
+      "path": "dump.shapes[0].label.layer.modExtraData.x",
+      "type": "number",
+      "value": -2
+    },
+    {
+      "path": "dump.shapes[0].label.layer.modExtraData.y",
+      "type": "number",
+      "value": -2
+    },
+    {
+      "path": "dump.shapes[0].label.layer.stats",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "path": "dump.shapes[0].label.layer.failedMam",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "path": "dump.shapes[0].label.layer.trashedCount",
+      "type": "number",
+      "value": 26
+    },
+    {
+      "path": "dump.shapes[0].label.usedInverseRotater",
+      "type": "object",
+      "value": {
+        "kind": "object",
+        "keys": 1,
+        "sample": {
+          "lastUpdate": 0
+        }
+      }
+    },
+    {
+      "path": "dump.shapes[0].label.usedInverseRotater.lastUpdate",
+      "type": "number",
+      "value": 0
+    },
+    {
+      "path": "dump.shapes[0].label.mods",
+      "type": "object",
+      "value": {
+        "kind": "object",
+        "keys": 1,
+        "sample": {
+          "id": {
+            "kind": "array",
+            "length": 1,
+            "sample": [
+              {
+                "kind": "object",
+                "keys": 1,
+                "sample": {
+                  "website": {
+                    "kind": "object",
+                    "keys": 2,
+                    "sample": {
+                      "$": "&",
+                      "data": "'"
+                    }
+                  }
+                }
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "path": "dump.shapes[0].label.mods.id",
+      "type": "array",
+      "value": {
+        "kind": "array",
+        "length": 1,
+        "sample": [
+          {
+            "kind": "object",
+            "keys": 1,
+            "sample": {
+              "website": {
+                "kind": "object",
+                "keys": 2,
+                "sample": {
+                  "$": "&",
+                  "data": "'"
+                }
+              }
+            }
+          }
+        ]
+      }
+    },
+    {
+      "path": "dump.shapes[0].label.mods.id[0].website",
+      "type": "object",
+      "value": {
+        "kind": "object",
+        "keys": 2,
+        "sample": {
+          "$": "&",
+          "data": "'"
+        }
+      }
+    },
+    {
+      "path": "dump.shapes[0].label.mods.id[0].website.$",
+      "type": "string",
+      "value": "&"
+    },
+    {
+      "path": "dump.shapes[0].label.mods.id[0].website.data",
+      "type": "string",
+      "value": "'"
+    },
+    {
+      "path": "dump.shapes[1].waypoints",
+      "type": "number",
+      "value": 11250
+    },
+    {
+      "path": "dump.shapes[1].label",
+      "type": "object",
+      "value": {
+        "kind": "object",
+        "keys": 1,
+        "sample": {
+          "layer": {
+            "kind": "object",
+            "keys": 4,
+            "sample": {
+              "modExtraData": {
+                "kind": "object",
+                "keys": 2,
+                "sample": {
+                  "x": -4,
+                  "y": -5
+                }
+              },
+              "stats": 180,
+              "failedMam": 180,
+              "trashedCount": 1
+            }
+          }
+        }
+      }
+    },
+    {
+      "path": "dump.shapes[1].label.layer",
+      "type": "object",
+      "value": {
+        "kind": "object",
+        "keys": 4,
+        "sample": {
+          "modExtraData": {
+            "kind": "object",
+            "keys": 2,
+            "sample": {
+              "x": -4,
+              "y": -5
+            }
+          },
+          "stats": 180,
+          "failedMam": 180,
+          "trashedCount": 1
+        }
+      }
+    },
+    {
+      "path": "dump.shapes[1].label.layer.modExtraData",
+      "type": "object",
+      "value": {
+        "kind": "object",
+        "keys": 2,
+        "sample": {
+          "x": -4,
+          "y": -5
+        }
+      }
+    },
+    {
+      "path": "dump.shapes[1].label.layer.modExtraData.x",
+      "type": "number",
+      "value": -4
+    },
+    {
+      "path": "dump.shapes[1].label.layer.stats",
+      "type": "number",
+      "value": 180
+    }
+  ],
+  "noteStats": {
+    "levelsWithNotes": [],
+    "totalNotes": 0
+  }
+}
