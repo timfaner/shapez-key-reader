@@ -2,6 +2,7 @@
 
 # Local verification saves and backups
 verify-backup/
+asar-tool.js
 *.bin
 *.backup
 
