@@ -1,0 +1,11 @@
+.DS_Store
+
+# Local verification saves and backups
+verify-backup/
+*.bin
+*.backup
+
+# Logs and editor files
+*.log
+.idea/
+.vscode/
