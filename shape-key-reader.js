@@ -5,7 +5,7 @@ const METADATA = {
     name: "Shape Key Reader",
     version: "1.0.1",
     id: "shape-key-reader",
-    description: "Click a running belt to read the shape item's short key without consuming it.",
+    description: "Right-click a running belt to read the shape item's short key without consuming it.",
     minimumGameVersion: ">=1.5.0",
 };
 
@@ -188,7 +188,7 @@ class HUDShapeKeyReader extends shapez.BaseHUDPart {
     }
 
     handleDownPreHandler(pos, button) {
-        if (button !== shapez.enumMouseButton.left || this.root.currentLayer !== "regular") {
+        if (button !== shapez.enumMouseButton.right || this.root.currentLayer !== "regular") {
             return;
         }
 
@@ -203,7 +203,7 @@ class HUDShapeKeyReader extends shapez.BaseHUDPart {
         if (!result) {
             this.showToast({
                 title: "No shape found",
-                message: "Click a belt line that is currently carrying a shape",
+                message: "Right-click a belt line that is currently carrying a shape",
                 key: "",
                 item: null,
                 isError: true,
