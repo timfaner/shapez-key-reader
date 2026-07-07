@@ -5,7 +5,7 @@ const METADATA = {
     name: "Shape Key Reader",
     version: "1.0.1",
     id: "shape-key-reader",
-    description: "Right-click a running belt to read the shape item's short key without consuming it.",
+    description: "Press left and right mouse buttons together on a running belt to read the shape item's short key without consuming it.",
     minimumGameVersion: ">=1.5.0",
 };
 
@@ -84,6 +84,14 @@ function isMovementKeyEvent(event) {
     );
 }
 
+function isLeftMouseEvent(event) {
+    return event.button === 0 || Boolean(event.buttons & 1);
+}
+
+function isRightMouseEvent(event) {
+    return event.button === 2 || Boolean(event.buttons & 2);
+}
+
 class HUDShapeKeyReader extends shapez.BaseHUDPart {
     createElements(parent) {
         this.toast = makeDiv(parent, "ingame_HUD_ShapeKeyReaderToast", ["shapeKeyReaderToast"]);
@@ -112,11 +120,21 @@ class HUDShapeKeyReader extends shapez.BaseHUDPart {
         this.toastTimeout = null;
         this.inputKeyHandler = this.handleTextInputKeyEvent.bind(this);
         this.inputFocusHandler = this.releaseMovementKeys.bind(this);
+        this.mouseDownHandler = this.handleDocumentMouseDown.bind(this);
+        this.mouseUpHandler = this.handleDocumentMouseUp.bind(this);
+        this.contextMenuHandler = this.handleContextMenu.bind(this);
+        this.leftMouseDown = false;
+        this.rightMouseDown = false;
 
         this.root.camera.downPreHandler.addToTop(this.downPreHandler, this);
         document.addEventListener("keydown", this.inputKeyHandler, true);
         document.addEventListener("keyup", this.inputKeyHandler, true);
         document.addEventListener("focusout", this.inputFocusHandler, true);
+        document.addEventListener("mousedown", this.mouseDownHandler, true);
+        document.addEventListener("mouseup", this.mouseUpHandler, true);
+        document.addEventListener("pointerdown", this.mouseDownHandler, true);
+        document.addEventListener("pointerup", this.mouseUpHandler, true);
+        document.addEventListener("contextmenu", this.contextMenuHandler, true);
 
         this.copyButton.addEventListener("click", event => {
             stopHudEvent(event);
@@ -137,8 +155,38 @@ class HUDShapeKeyReader extends shapez.BaseHUDPart {
         document.removeEventListener("keydown", this.inputKeyHandler, true);
         document.removeEventListener("keyup", this.inputKeyHandler, true);
         document.removeEventListener("focusout", this.inputFocusHandler, true);
+        document.removeEventListener("mousedown", this.mouseDownHandler, true);
+        document.removeEventListener("mouseup", this.mouseUpHandler, true);
+        document.removeEventListener("pointerdown", this.mouseDownHandler, true);
+        document.removeEventListener("pointerup", this.mouseUpHandler, true);
+        document.removeEventListener("contextmenu", this.contextMenuHandler, true);
         this.clearToastTimeout();
         super.cleanup();
+    }
+
+    handleDocumentMouseDown(event) {
+        if (isLeftMouseEvent(event)) {
+            this.leftMouseDown = true;
+        }
+        if (isRightMouseEvent(event)) {
+            this.rightMouseDown = true;
+        }
+    }
+
+    handleDocumentMouseUp(event) {
+        if (event.button === 0 || !Boolean(event.buttons & 1)) {
+            this.leftMouseDown = false;
+        }
+        if (event.button === 2 || !Boolean(event.buttons & 2)) {
+            this.rightMouseDown = false;
+        }
+    }
+
+    handleContextMenu(event) {
+        if (this.leftMouseDown || this.rightMouseDown) {
+            event.preventDefault();
+            event.stopPropagation();
+        }
     }
 
     handleTextInputKeyEvent(event) {
@@ -188,7 +236,7 @@ class HUDShapeKeyReader extends shapez.BaseHUDPart {
     }
 
     handleDownPreHandler(pos, button) {
-        if (button !== shapez.enumMouseButton.right || this.root.currentLayer !== "regular") {
+        if (!this.leftMouseDown || !this.rightMouseDown || this.root.currentLayer !== "regular") {
             return;
         }
 
@@ -203,7 +251,7 @@ class HUDShapeKeyReader extends shapez.BaseHUDPart {
         if (!result) {
             this.showToast({
                 title: "No shape found",
-                message: "Right-click a belt line that is currently carrying a shape",
+                message: "Press left and right mouse buttons together on a belt carrying a shape",
                 key: "",
                 item: null,
                 isError: true,
